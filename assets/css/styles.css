@@ -1,21 +1,24 @@
 h1{
-    color: black;
+    color: rgb(56, 221, 218);
     font-size: 22px;
     font-weight: bold;
-    text-decoration: underline;
-    text-align: center;
 }
 
 h2{
+    color: rgb(56, 221, 218);
     font-size: 16px;
     font-weight: bold;
     text-align: center;
 }
+h3{
+    color: rgb(239, 237, 237);
+    font-size: 14px;
+    font-weight: bold 
+}
 
 body{
     width: 100%;
-    min-height:100%;
-    background-color: light gray;
+    background-color: rgb(45, 178, 235);
 }
 img{
      width:100%;
