@@ -2,36 +2,90 @@
 <html lang="en-us">
   <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <!-- Add a title here -->
-
-    <!-- Boostrap Stylesheet -->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
-
-    <!-- Our own CSS stylesheet -->
+    <title>Boostrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
-
   </head>
 
-  <body>
+ <body>
     <!-- Start of navbar -->
-    <!-- End of navbar -->
+    <div class="navigation">
+     <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+       <a class="navbar-band" style="background-color: rgb(29, 172, 201)"; href= "../index.html"><h3>LATITUDE</h3></a>
+       <button class ="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="false" aria-label="toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+       <div class = "collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class = "nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PLOTS</a>
+              <div class="dropdown-menu dropdown-menu-right">
+                 <a class = "dropdown-item" href="./temp.html" > Latitude Vs Max. Temperature</a>
+                 <a class = "dropdown-item" href="./cloudiness.html" > Latitude Vs Cloudiness</a>
+                 <a class = "dropdown-item" href="./humidity.html" > Latitude Vs Humidity</a>
+                 <a class = "dropdown-item" href="./wind.html" > Latitude Vs Windspeed</a>
+              </div>
+              </li>
+                <li class="nav-item">
+                 <a class="nav-link" href="../comparison.html">COMPARISON</a>
+              </li>
+              <li class="nav-item">
+                 <a class="nav-link" href="../data.html">DATA</a>
+              </li>
+          </ul>
+       </div>
+     </nav>
+   </div>
+   <br>
+   <br>
+   <!-- End of navbar -->
 
-    <!-- Start of container -->
-
-          <!-- Start of Visualizations imageNav Area -->
-          <!-- End of the Visualizations imageNav Area -->
-
-    <!-- End of container -->
-
-    <!-- jQuery CDN -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-    <!-- Bootstrap CDN -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  </body>
-
+   <!-- Start of container -->
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-5 col-md-7">
+          <div class="box" style="width: 400px;">
+              <h2 class="title"> Summary: Latitude vs. Humidity </h2>
+              <hr> 
+              <img src="../assets/images/Fig2.png" class="fig1 leftside" alt ="Latitude vs Humidity" height=150px>
+              <p> The latitude vs Humidity plot shows no strong correlation. 
+              </p>
+           </div>
+        </div>  
+        <div class="col-lg-7 col-md-10">
+           <div class="box">
+             <h2 class="title">VISUALIZATIONS</h2>
+             <hr>  
+             <div class="container">
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <a href="./temp.html"><img class="panel" src="../assets/images/Fig1.png" alt="Latitude Vs Max. Temperature"height=200px></a>
+                    </div>
+                    <div class="col-lg-5">
+                      <a href="./humidity.html"><img class="panel" src="../assets/images/Fig2.png" alt="Latitude Vs Humidity" height=200px></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-5 ">
+                      <a href="./cloudiness.html"><img class="panel" src="../assets/images/Fig3.png" alt="Latitude Vs Cloudiness" height=200px></a>
+                    </div>
+                    <div class="col-lg-5">
+                      <a href="./wind.html"><img class="panel" src="../assets/images/Fig4.png" alt="Latitude Vs Windspeed" height=200px></a>
+                    </div>
+                 </div> 
+              </div>  
+            </div> 
+        </div>
+     </div>   
+   </div>
+ </body>
 </html>
+          
+  
